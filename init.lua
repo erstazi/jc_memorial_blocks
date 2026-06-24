@@ -3,12 +3,19 @@ local S = core.get_translator("jc_memorial_blocks")
 
 core.register_node("jc_memorial_blocks:lag_block", {
   description = "Show this around town to sho you love the original Just Test.  REMEMBER THE TEST.  Lag, This is a dedication block to your ideas, your server, and you.  My skuchayem i lyubyat vas.  WE MISS AND LOVE YOU!",
+  short_description = "Show this around town to sho you love the original Just Test.  REMEMBER THE TEST.  Lag, This is a dedication block to your ideas, your server, and you.  My skuchayem i lyubyat vas.  WE MISS AND LOVE YOU!",
   tiles = {"default_water.png^treeprop.png^heart.png"},
   is_ground_content = false,
   walkable = false,
   light_source = core.LIGHT_MAX,
   groups = {immortal=1,cracky=1,not_in_creative_inventory = 1},
   sounds = default.node_sound_stone_defaults(),
+  after_place_node = function(pos, placer)
+    local meta = minetest.get_meta(pos);
+    local infotext_lag_block = "Show this around town to sho you love the original Just Test.  REMEMBER THE TEST.  Lag, This is a dedication block to your ideas, your server, and you.  My skuchayem i lyubyat vas.  WE MISS AND LOVE YOU!",
+    meta:set_string("owner",  (placer:get_player_name() or ""));
+    meta:set_string("infotext",  infotext_lag_block);
+  end,
 })
 
 ---------------------------------------------------------
@@ -17,6 +24,7 @@ core.register_node("jc_memorial_blocks:lag_block", {
 
 core.register_node("jc_memorial_blocks:2025", {
   description = S("2025 Memorial Block"),
+  short_description = S("2025 Memorial Block"),
   tiles = {
     "jc_memorial_blocks_2025_top.png",
     "jc_memorial_blocks_2025_bottom.png",
@@ -26,9 +34,14 @@ core.register_node("jc_memorial_blocks:2025", {
     "jc_memorial_blocks_2025_side.png",
   },
   is_ground_content = false,
-  groups = {cracky = 2,not_in_creative_inventory = 1},
+  groups = {cracky = 2, not_in_creative_inventory = 1},
   light_source = 10,
   sounds = default.node_sound_stone_defaults(),
+  after_place_node = function(pos, placer)
+    local meta = minetest.get_meta(pos);
+    meta:set_string("owner",  (placer:get_player_name() or ""));
+    meta:set_string("infotext",  "2025 Memorial Block");
+  end,
 })
 
 ---------------------------------------------------------
@@ -37,6 +50,7 @@ core.register_node("jc_memorial_blocks:2025", {
 
 core.register_node("jc_memorial_blocks:2026", {
   description = S("2026 Memorial Block"),
+  short_description = S("2026 Memorial Block"),
   tiles = {
     "jc_memorial_blocks_2026_top.png",
     "jc_memorial_blocks_2026_bottom.png",
@@ -49,6 +63,11 @@ core.register_node("jc_memorial_blocks:2026", {
   groups = {cracky = 2,not_in_creative_inventory = 1},
   light_source = 10,
   sounds = default.node_sound_stone_defaults(),
+  after_place_node = function(pos, placer)
+    local meta = minetest.get_meta(pos);
+    meta:set_string("owner",  (placer:get_player_name() or ""));
+    meta:set_string("infotext",  "2026 Memorial Block");
+  end,
 })
 
 ---------------------------------------------------------
