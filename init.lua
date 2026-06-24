@@ -52,19 +52,19 @@ core.register_node("jc_memorial_blocks:2026", {
 })
 
 ---------------------------------------------------------
--- Heal players every 5 seconds
+-- Heal players every 2 seconds
 ---------------------------------------------------------
 
-local timer = 0
+local particle_timer = 0
 
 core.register_globalstep(function(dtime)
-  timer = timer + dtime
+  particle_timer = particle_timer + dtime
 
-  -- if timer < 5 then
-    -- return
-  -- end
+  if particle_timer < 2 then
+    return
+  end
 
-  timer = 0
+  particle_timer = 0
 
   for _, player in ipairs(core.get_connected_players()) do
 
@@ -88,20 +88,20 @@ core.register_globalstep(function(dtime)
 
       -- Healing particles
       core.add_particlespawner({
-        amount = 3,
-        time = 1,
+        amount = 2,
+        time = 2,
 
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
         maxpos = vector.add(pos, {x=0.25,y=1.2,z=0.25}),
 
-        minvel = {x=-0.1,y=0.2,z=-0.1},
-        maxvel = {x= 0.1,y=0.6,z= 0.1},
+        minvel = {x=-0.02, y=0.03, z=-0.02},
+        maxvel = {x= 0.02, y=0.08, z= 0.02},
 
-        minacc = {x=0,y=0,z=0},
-        maxacc = {x=0,y=0.2,z=0},
+        minacc = {x=0, y=0, z=0},
+        maxacc = {x=0, y=0.01, z=0},
 
-        minexptime = 0.8,
-        maxexptime = 1.6,
+        minexptime = 2.5,
+        maxexptime = 4.0,
 
         minsize = 2,
         maxsize = 5,
@@ -111,20 +111,20 @@ core.register_globalstep(function(dtime)
       })
     elseif node.name == "jc_memorial_blocks:2026" then
       core.add_particlespawner({
-        amount = 3,
-        time = 1,
+        amount = 2,
+        time = 2,
 
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
         maxpos = vector.add(pos, {x=0.25,y=1.2,z=0.25}),
 
-        minvel = {x=-0.1,y=0.2,z=-0.1},
-        maxvel = {x= 0.1,y=0.6,z= 0.1},
+        minvel = {x=-0.02, y=0.03, z=-0.02},
+        maxvel = {x= 0.02, y=0.08, z= 0.02},
 
-        minacc = {x=0,y=0,z=0},
-        maxacc = {x=0,y=0.2,z=0},
+        minacc = {x=0, y=0, z=0},
+        maxacc = {x=0, y=0.01, z=0},
 
-        minexptime = 0.8,
-        maxexptime = 1.6,
+        minexptime = 2.5,
+        maxexptime = 4.0,
 
         minsize = 2,
         maxsize = 5,
