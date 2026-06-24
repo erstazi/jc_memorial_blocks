@@ -6,7 +6,7 @@ core.register_node("jc_memorial_blocks:lag_block", {
   tiles = {"default_water.png^treeprop.png^heart.png"},
   is_ground_content = false,
   walkable = false,
-  light_source = default.LIGHT_MAX,
+  light_source = core.LIGHT_MAX,
   groups = {immortal=1,cracky=1,not_in_creative_inventory = 1},
   sounds = default.node_sound_stone_defaults(),
 })
