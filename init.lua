@@ -60,9 +60,9 @@ local timer = 0
 core.register_globalstep(function(dtime)
   timer = timer + dtime
 
-  if timer < 5 then
-    return
-  end
+  -- if timer < 5 then
+    -- return
+  -- end
 
   timer = 0
 
