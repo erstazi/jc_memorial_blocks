@@ -94,8 +94,8 @@ core.register_globalstep(function(dtime)
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
         maxpos = vector.add(pos, {x=0.25,y=1.2,z=0.25}),
 
-        minvel = {x=-0.02, y=0.03, z=-0.02},
-        maxvel = {x= 0.02, y=0.08, z= 0.02},
+        minvel = {x=-0.04, y=0.06, z=-0.04},
+        maxvel = {x= 0.04, y=0.16, z= 0.04},
 
         minacc = {x=0, y=0, z=0},
         maxacc = {x=0, y=0.01, z=0},
@@ -117,8 +117,8 @@ core.register_globalstep(function(dtime)
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
         maxpos = vector.add(pos, {x=0.25,y=1.2,z=0.25}),
 
-        minvel = {x=-0.02, y=0.03, z=-0.02},
-        maxvel = {x= 0.02, y=0.08, z= 0.02},
+        minvel = {x=-0.04, y=0.06, z=-0.04},
+        maxvel = {x= 0.04, y=0.16, z= 0.04},
 
         minacc = {x=0, y=0, z=0},
         maxacc = {x=0, y=0.01, z=0},
