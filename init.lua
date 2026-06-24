@@ -111,7 +111,7 @@ core.register_globalstep(function(dtime)
       })
     elseif node.name == "jc_memorial_blocks:2026" then
       core.add_particlespawner({
-        amount = 18,
+        amount = 8,
         time = 1,
 
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
@@ -129,7 +129,7 @@ core.register_globalstep(function(dtime)
         minsize = 2,
         maxsize = 5,
 
-        texture = "default_mese_crystal.png^[colorize:#2060FF:255",
+        texture = "default_mese_crystal.png^[colorize:#2060FF:150",
         glow = 10,
       })
     end
