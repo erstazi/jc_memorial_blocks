@@ -109,6 +109,29 @@ core.register_globalstep(function(dtime)
         texture = "heart.png^[colorize:#66ff66:120",
         glow = 10,
       })
+    elseif node.name == "jc_memorial_blocks:2026" then
+      core.add_particlespawner({
+        amount = 18,
+        time = 1,
+
+        minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
+        maxpos = vector.add(pos, {x=0.25,y=1.2,z=0.25}),
+
+        minvel = {x=-0.1,y=0.2,z=-0.1},
+        maxvel = {x= 0.1,y=0.6,z= 0.1},
+
+        minacc = {x=0,y=0,z=0},
+        maxacc = {x=0,y=0.2,z=0},
+
+        minexptime = 0.8,
+        maxexptime = 1.6,
+
+        minsize = 2,
+        maxsize = 5,
+
+        texture = "default_mese_crystal.png^[colorize:#6670FF:120",
+        glow = 10,
+      })
     end
   end
 end)
