@@ -129,7 +129,7 @@ core.register_globalstep(function(dtime)
         minsize = 2,
         maxsize = 5,
 
-        texture = "default_mese_crystal.png^[colorize:#6670FF:120",
+        texture = "default_mese_crystal.png^[colorize:#2060FF:255",
         glow = 10,
       })
     end
