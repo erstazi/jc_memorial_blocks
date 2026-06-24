@@ -88,7 +88,7 @@ core.register_globalstep(function(dtime)
 
       -- Healing particles
       core.add_particlespawner({
-        amount = 18,
+        amount = 3,
         time = 1,
 
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
@@ -111,7 +111,7 @@ core.register_globalstep(function(dtime)
       })
     elseif node.name == "jc_memorial_blocks:2026" then
       core.add_particlespawner({
-        amount = 8,
+        amount = 3,
         time = 1,
 
         minpos = vector.subtract(pos, {x=0.25,y=0.5,z=0.25}),
