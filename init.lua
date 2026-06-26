@@ -129,6 +129,15 @@ core.register_globalstep(function(dtime)
         glow = 10,
       })
     elseif node.name == "jc_memorial_blocks:2026" then
+      -- Feed player
+      local name = player:get_player_name()
+
+      if hbhunger and hbhunger.hunger[name] then
+          hbhunger.hunger[name] =
+              math.min(hbhunger.SAT_MAX, hbhunger.hunger[name] + 1)
+
+          hbhunger.set_hunger_raw(player)
+      end
       core.add_particlespawner({
         amount = 2,
         time = 2,
@@ -148,7 +157,7 @@ core.register_globalstep(function(dtime)
         minsize = 2,
         maxsize = 5,
 
-        texture = "default_mese_crystal.png^[colorize:#2060FF:150",
+        texture = "farming_bread.png^[colorize:#F8FF20:150",
         glow = 10,
       })
     end
