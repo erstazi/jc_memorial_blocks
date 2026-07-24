@@ -1,5 +1,9 @@
 local S = core.get_translator("jc_memorial_blocks")
 
+local healing_sounds = {}
+local satiation_sounds = {}
+local sound_check_timer = 0
+
 local infotext_lag_block = "Show this around town to show you love the original Just Test. REMEMBER THE TEST. Lag, This is a dedication block to your ideas, your server, and you. My skuchayem i lyubyat vas. WE MISS AND LOVE YOU!"
 local infotext_memorial_block_2025 = "2025 Memorial Block"
 local infotext_memorial_block_2026 = "2026 Memorial Block"
@@ -164,3 +168,89 @@ core.register_node("jc_memorial_blocks:2026", {
     return true
   end,
 })
+
+core.register_globalstep(function(dtime)
+  sound_check_timer = sound_check_timer + dtime
+  if sound_check_timer < 1 then
+    return
+  end
+  sound_check_timer = 0
+
+  for _, player in ipairs(core.get_connected_players()) do
+    local name = player:get_player_name()
+    local ppos = player:get_pos()
+
+    local found_2025 = false
+    local found_2026 = false
+
+    -- Search the same area that the block effects use
+    for x = -1, 1 do
+      for y = -1, 1 do
+        for z = -1, 1 do
+          local pos = {
+            x = math.floor(ppos.x) + x,
+            y = math.floor(ppos.y) + y,
+            z = math.floor(ppos.z) + z,
+          }
+
+          local node = core.get_node_or_nil(pos)
+
+          if node then
+            if node.name == "jc_memorial_blocks:2025" then
+              if vector.distance(pos, ppos) <= 1.2 then
+                found_2025 = true
+              end
+            elseif node.name == "jc_memorial_blocks:2026" then
+              if vector.distance(pos, ppos) <= 1.2 then
+                found_2026 = true
+              end
+            end
+          end
+
+        end
+      end
+    end
+
+    -- 2025 healing sound
+    if found_2025 then
+      if not healing_sounds[name] then
+        healing_sounds[name] = core.sound_play("healing", {
+          to_player = name,
+          gain = 0.1,
+          loop = true,
+        })
+      end
+    elseif healing_sounds[name] then
+      core.sound_stop(healing_sounds[name])
+      healing_sounds[name] = nil
+    end
+
+    -- 2026 satiation sound
+    if found_2026 then
+      if not satiation_sounds[name] then
+        satiation_sounds[name] = core.sound_play("satiation", {
+          to_player = name,
+          gain = 0.1,
+          loop = true,
+        })
+      end
+    elseif satiation_sounds[name] then
+      core.sound_stop(satiation_sounds[name])
+      satiation_sounds[name] = nil
+    end
+  end
+end)
+
+core.register_on_leaveplayer(function(player)
+  local name = player:get_player_name()
+
+  if healing_sounds[name] then
+    core.sound_stop(healing_sounds[name])
+    healing_sounds[name] = nil
+  end
+
+  if satiation_sounds[name] then
+    core.sound_stop(satiation_sounds[name])
+    satiation_sounds[name] = nil
+  end
+end)
