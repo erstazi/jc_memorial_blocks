@@ -299,7 +299,7 @@ end)
 
 core.register_chatcommand("memorial_sounds", {
   params = "<on|off>",
-  description = "Enable or disable memorial block sounds.",
+  description = S("Enable or disable memorial block sounds."),
   func = function(name, param)
     local player = core.get_player_by_name(name)
     if not player then

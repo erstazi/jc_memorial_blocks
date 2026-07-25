@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Memorial block sounds can be disabled with /memorial_sounds off."
+msgstr "Memorial block sounds can be disabled with /memorial_sounds off."
+
+msgid "This setting is saved after you leave the game."
+msgstr "This setting is saved after you leave the game."
+
+msgid "Enable or disable memorial block sounds."
+msgstr "Enable or disable memorial block sounds."
