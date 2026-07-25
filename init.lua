@@ -3,6 +3,7 @@ local S = core.get_translator("jc_memorial_blocks")
 local healing_sounds = {}
 local satiation_sounds = {}
 local sound_check_timer = 0
+local memorial_sounds_disabled = {}
 
 local infotext_lag_block = "Show this around town to show you love the original Just Test. REMEMBER THE TEST. Lag, This is a dedication block to your ideas, your server, and you. My skuchayem i lyubyat vas. WE MISS AND LOVE YOU!"
 local infotext_memorial_block_2025 = "2025 Memorial Block"
@@ -183,6 +184,22 @@ core.register_globalstep(function(dtime)
     local found_2025 = false
     local found_2026 = false
 
+    local meta = player:get_meta()
+
+    if meta:get_string("memorial_sounds") == "off" then
+      if healing_sounds[name] then
+        core.sound_stop(healing_sounds[name])
+        healing_sounds[name] = nil
+      end
+
+      if satiation_sounds[name] then
+        core.sound_stop(satiation_sounds[name])
+        satiation_sounds[name] = nil
+      end
+
+      goto continue
+    end
+
     -- Search the same area that the block effects use
     for x = -1, 1 do
       for y = -1, 1 do
@@ -238,6 +255,8 @@ core.register_globalstep(function(dtime)
       core.sound_stop(satiation_sounds[name])
       satiation_sounds[name] = nil
     end
+
+    ::continue::
   end
 end)
 
@@ -254,3 +273,39 @@ core.register_on_leaveplayer(function(player)
     satiation_sounds[name] = nil
   end
 end)
+
+core.register_chatcommand("memorial_sounds", {
+  params = "<on|off>",
+  description = "Enable or disable memorial block sounds.",
+  func = function(name, param)
+    local player = core.get_player_by_name(name)
+    if not player then
+      return false, "Player not found."
+    end
+
+    local meta = player:get_meta()
+    param = param:lower()
+
+    if param == "off" then
+      meta:set_string("memorial_sounds", "off")
+
+      if healing_sounds[name] then
+        core.sound_stop(healing_sounds[name])
+        healing_sounds[name] = nil
+      end
+
+      if satiation_sounds[name] then
+        core.sound_stop(satiation_sounds[name])
+        satiation_sounds[name] = nil
+      end
+
+      return true, "Memorial block sounds disabled."
+
+    elseif param == "on" then
+      meta:set_string("memorial_sounds", "on")
+      return true, "Memorial block sounds enabled."
+    end
+
+    return false, "Usage: /memorial_sounds <on|off>"
+  end,
+})
