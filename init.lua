@@ -337,3 +337,17 @@ core.register_chatcommand("memorial_sounds", {
     return false, "Usage: /memorial_sounds <on|off>"
   end,
 })
+
+core.register_chatcommand("reset_memorial_notice", {
+  description = "Show the memorial sounds notice again on next login.",
+  privs = {server = true},
+  func = function(name)
+    local player = core.get_player_by_name(name)
+    if not player then
+      return false, "Player not found."
+    end
+
+    player:get_meta():set_string("memorial_sounds_notice", "")
+    return true, "Memorial notice reset."
+  end,
+})
