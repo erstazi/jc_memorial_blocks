@@ -299,10 +299,15 @@ core.register_chatcommand("memorial_sounds", {
         satiation_sounds[name] = nil
       end
 
+      core.log("action", "[MEMORIAL BLOCK SOUNDS] " .. name .. " turned _OFF_ sounds")
+
       return true, "Memorial block sounds disabled."
 
     elseif param == "on" then
       meta:set_string("memorial_sounds", "on")
+
+      core.log("action", "[MEMORIAL BLOCK SOUNDS] " .. name .. " turned ON sounds")
+
       return true, "Memorial block sounds enabled."
     end
 
