@@ -271,11 +271,12 @@ core.register_on_joinplayer(function(player)
     local meta = player:get_meta()
 
     if meta:get_string("memorial_sounds_notice") == "" then
-      core.chat_send_player(name, core.colorize("#00FF88", "========================================================="))
-      core.chat_send_player(name, core.colorize("#FFFF00", " With memorial blocks, you can disable the audio loop "))
-      core.chat_send_player(name, core.colorize("#FFFF00", " that erstazi made with the command /memorial_sounds off. "))
-      core.chat_send_player(name, core.colorize("#FFB188", " This will keep the setting after you leave the game. "))
-      core.chat_send_player(name, core.colorize("#00FF88", "========================================================="))
+
+      core.chat_send_player(name, core.colorize("#00FF88", "========================================================================================"))
+      core.chat_send_player(name, core.colorize("#FFFF00", " " .. S("Memorial block sounds can be disabled with /memorial_sounds off.")))
+      core.chat_send_player(name, core.colorize("#FFB188", " " .. S("This setting is saved after you leave the game.")))
+      core.chat_send_player(name, core.colorize("#00FF88", "========================================================================================"))
+
       meta:set_string("memorial_sounds_notice", "done")
     end
 
