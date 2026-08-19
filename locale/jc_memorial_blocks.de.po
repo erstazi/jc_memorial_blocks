@@ -1,37 +1,38 @@
 msgid ""
 msgstr ""
+"Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "2025 Memorial Block"
-msgstr ""
+msgstr "Gedenkblock 2025"
 
 msgid "2026 Memorial Block"
-msgstr ""
+msgstr "Gedenkblock 2026"
 
 msgid "Enable or disable memorial block sounds."
-msgstr ""
+msgstr "Gedenkblock-Sounds aktivieren oder deaktivieren."
 
 msgid "Player not found."
-msgstr ""
+msgstr "Spieler nicht gefunden."
 
 msgid "Memorial block sounds disabled."
-msgstr ""
+msgstr "Gedenkblock-Sounds deaktiviert."
 
 msgid "Memorial block sounds enabled."
-msgstr ""
+msgstr "Gedenkblock-Sounds aktiviert."
 
 msgid "Usage: /memorial_sounds <on|off>"
-msgstr ""
+msgstr "Verwendung: /memorial_sounds <on|off>"
 
 msgid "Show the memorial notices again on next login."
-msgstr ""
+msgstr "Gedenkhinweise beim nächsten Anmelden erneut anzeigen."
 
 msgid "Memorial notices reset."
-msgstr ""
+msgstr "Gedenkhinweise zurückgesetzt."
 
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
-msgstr ""
+msgstr "Die Sounds der Gedenkblöcke können mit /memorial_sounds off deaktiviert werden."
 
 msgid "This setting is saved after you leave the game."
-msgstr ""
+msgstr "Diese Einstellung wird gespeichert, nachdem du das Spiel verlassen hast."

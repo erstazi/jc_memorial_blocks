@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Language: uk\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "2025 Memorial Block"
+msgstr "Пам'ятний блок 2025 року"
+
+msgid "2026 Memorial Block"
+msgstr "Пам'ятний блок 2026 року"
+
+msgid "Enable or disable memorial block sounds."
+msgstr "Увімкнути або вимкнути звуки пам'ятних блоків."
+
+msgid "Player not found."
+msgstr "Гравця не знайдено."
+
+msgid "Memorial block sounds disabled."
+msgstr "Звуки пам'ятних блоків вимкнено."
+
+msgid "Memorial block sounds enabled."
+msgstr "Звуки пам'ятних блоків увімкнено."
+
+msgid "Usage: /memorial_sounds <on|off>"
+msgstr "Використання: /memorial_sounds <on|off>"
+
+msgid "Show the memorial notices again on next login."
+msgstr "Знову показати пам'ятні повідомлення під час наступного входу."
+
+msgid "Memorial notices reset."
+msgstr "Пам'ятні повідомлення скинуто."
+
+msgid "Memorial block sounds can be disabled with /memorial_sounds off."
+msgstr "Звуки пам'ятних блоків можна вимкнути за допомогою /memorial_sounds off."
+
+msgid "This setting is saved after you leave the game."
+msgstr "Це налаштування зберігається після виходу з гри."

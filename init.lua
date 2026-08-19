@@ -1,4 +1,4 @@
-local S = core.get_translator("jc_memorial_blocks")
+local S = core.get_translator(core.get_current_modname())
 
 local healing_sounds = {}
 local satiation_sounds = {}
@@ -6,8 +6,6 @@ local sound_check_timer = 0
 local memorial_sounds_disabled = {}
 
 local infotext_lag_block = "Show this around town to show you love the original Just Test. REMEMBER THE TEST. Lag, This is a dedication block to your ideas, your server, and you. My skuchayem i lyubyat vas. WE MISS AND LOVE YOU!"
-local infotext_memorial_block_2025 = "2025 Memorial Block"
-local infotext_memorial_block_2026 = "2026 Memorial Block"
 
 local function start_memorial_timer(pos)
   local timer = core.get_node_timer(pos)
@@ -60,13 +58,13 @@ core.register_node("jc_memorial_blocks:2025", {
 
   on_construct = function(pos)
     local meta = core.get_meta(pos)
-    meta:set_string("infotext", infotext_memorial_block_2025)
+    meta:set_string("infotext", S("2025 Memorial Block"))
     start_memorial_timer(pos)
   end,
 
   on_punch = function(pos)
     local meta = core.get_meta(pos)
-    meta:set_string("infotext", infotext_memorial_block_2025)
+    meta:set_string("infotext", S("2025 Memorial Block"))
     start_memorial_timer(pos)
   end,
 
@@ -125,13 +123,13 @@ core.register_node("jc_memorial_blocks:2026", {
 
   on_construct = function(pos)
     local meta = core.get_meta(pos)
-    meta:set_string("infotext", infotext_memorial_block_2026)
+    meta:set_string("infotext", S("2026 Memorial Block"))
     start_memorial_timer(pos)
   end,
 
   on_punch = function(pos)
     local meta = core.get_meta(pos)
-    meta:set_string("infotext", infotext_memorial_block_2026)
+    meta:set_string("infotext", S("2026 Memorial Block"))
     start_memorial_timer(pos)
   end,
 
@@ -303,7 +301,7 @@ core.register_chatcommand("memorial_sounds", {
   func = function(name, param)
     local player = core.get_player_by_name(name)
     if not player then
-      return false, "Player not found."
+      return false, S("Player not found.")
     end
 
     local meta = player:get_meta()
@@ -323,31 +321,27 @@ core.register_chatcommand("memorial_sounds", {
       end
 
       core.log("action", "[MEMORIAL BLOCK SOUNDS] " .. name .. " turned _OFF_ sounds")
-
-      return true, "Memorial block sounds disabled."
-
+      return true, S("Memorial block sounds disabled.")
     elseif param == "on" then
       meta:set_string("memorial_sounds", "on")
-
       core.log("action", "[MEMORIAL BLOCK SOUNDS] " .. name .. " turned ON sounds")
-
-      return true, "Memorial block sounds enabled."
+      return true, S("Memorial block sounds enabled.")
     end
 
-    return false, "Usage: /memorial_sounds <on|off>"
+    return false, S("Usage: /memorial_sounds <on|off>")
   end,
 })
 
 core.register_chatcommand("reset_memorial_notice", {
-  description = "Show the memorial notices again on next login.",
+  description = S("Show the memorial notices again on next login."),
   privs = {server = true},
   func = function(name)
     local player = core.get_player_by_name(name)
     if not player then
-      return false, "Player not found."
+      return false, S("Player not found.")
     end
 
     player:get_meta():set_string("memorial_sounds_notice_20260725", "")
-    return true, "Memorial notices reset."
+    return true, S("Memorial notices reset.")
   end,
 })

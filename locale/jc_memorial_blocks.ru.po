@@ -1,13 +1,38 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
 "Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "2025 Memorial Block"
+msgstr "Памятный блок 2025 года"
+
+msgid "2026 Memorial Block"
+msgstr "Памятный блок 2026 года"
+
+msgid "Enable or disable memorial block sounds."
+msgstr "Включить или отключить звуки памятных блоков."
+
+msgid "Player not found."
+msgstr "Игрок не найден."
+
+msgid "Memorial block sounds disabled."
+msgstr "Звуки памятных блоков отключены."
+
+msgid "Memorial block sounds enabled."
+msgstr "Звуки памятных блоков включены."
+
+msgid "Usage: /memorial_sounds <on|off>"
+msgstr "Использование: /memorial_sounds <on|off>"
+
+msgid "Show the memorial notices again on next login."
+msgstr "Снова показать памятные уведомления при следующем входе."
+
+msgid "Memorial notices reset."
+msgstr "Памятные уведомления сброшены."
 
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
-msgstr "Звук мемориальных блоков можно отключить командой /memorial_sounds off."
+msgstr "Звуки памятных блоков можно отключить с помощью /memorial_sounds off."
 
 msgid "This setting is saved after you leave the game."
 msgstr "Эта настройка сохраняется после выхода из игры."
-
-msgid "Enable or disable memorial block sounds."
-msgstr "Включить или отключить звуки мемориальных блоков."
