@@ -5,7 +5,12 @@ local satiation_sounds = {}
 local sound_check_timer = 0
 local memorial_sounds_disabled = {}
 
-local infotext_lag_block = "Show this around town to show you love the original Just Test. REMEMBER THE TEST. Lag, This is a dedication block to your ideas, your server, and you. My skuchayem i lyubyat vas. WE MISS AND LOVE YOU!"
+local infotext_lag_block =
+  S("Show this around town to show you love the original Just Test. REMEMBER THE TEST.") ..
+  " Lag, " ..
+  S("This is a dedication block to your ideas, your server, and you.") ..
+  " My skuchayem i lyubyat vas. " ..
+  S("WE MISS AND LOVE YOU!")
 
 local function start_memorial_timer(pos)
   local timer = core.get_node_timer(pos)

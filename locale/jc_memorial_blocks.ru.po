@@ -36,3 +36,12 @@ msgstr "Звуки памятных блоков можно отключить �
 
 msgid "This setting is saved after you leave the game."
 msgstr "Эта настройка сохраняется после выхода из игры."
+
+msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
+msgstr "Разместите это в городе, чтобы показать свою любовь к оригинальному Just Test. ПОМНИТЕ ТЕСТ!"
+
+msgid "This is a dedication block to your ideas, your server, and you."
+msgstr "Этот блок посвящён вашим идеям, вашему серверу и вам."
+
+msgid "WE MISS AND LOVE YOU!"
+msgstr "МЫ СКУЧАЕМ ПО ВАМ И ЛЮБИМ ВАС!"

@@ -36,3 +36,12 @@ msgstr "Die Sounds der Gedenkblöcke können mit /memorial_sounds off deaktivier
 
 msgid "This setting is saved after you leave the game."
 msgstr "Diese Einstellung wird gespeichert, nachdem du das Spiel verlassen hast."
+
+msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
+msgstr "Stelle dies in der Stadt auf, um zu zeigen, dass du das originale Just Test liebst. DENK AN DEN TEST!"
+
+msgid "This is a dedication block to your ideas, your server, and you."
+msgstr "Dieser Block ist deinen Ideen, deinem Server und dir gewidmet."
+
+msgid "WE MISS AND LOVE YOU!"
+msgstr "WIR VERMISSEN DICH UND HABEN DICH LIEB!"

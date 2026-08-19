@@ -36,3 +36,12 @@ msgstr "Les sons des blocs commémoratifs peuvent être désactivés avec /memor
 
 msgid "This setting is saved after you leave the game."
 msgstr "Ce réglage est enregistré après avoir quitté le jeu."
+
+msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
+msgstr "Place ceci dans la ville pour montrer que tu aimes le Just Test original. SOUVIENS-TOI DU TEST !"
+
+msgid "This is a dedication block to your ideas, your server, and you."
+msgstr "Ce bloc est dédié à tes idées, à ton serveur et à toi."
+
+msgid "WE MISS AND LOVE YOU!"
+msgstr "TU NOUS MANQUES ET NOUS T'AIMONS !"

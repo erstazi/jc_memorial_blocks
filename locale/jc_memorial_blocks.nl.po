@@ -36,3 +36,12 @@ msgstr "De geluiden van de gedenkblokken kunnen worden uitgeschakeld met /memori
 
 msgid "This setting is saved after you leave the game."
 msgstr "Deze instelling wordt opgeslagen nadat je het spel verlaat."
+
+msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
+msgstr "Zet dit in de stad om te laten zien dat je van de originele Just Test houdt. ONTHOUD DE TEST!"
+
+msgid "This is a dedication block to your ideas, your server, and you."
+msgstr "Dit is een eerbetoon aan jouw ideeën, jouw server en jou."
+
+msgid "WE MISS AND LOVE YOU!"
+msgstr "WE MISSEN JE EN HOUDEN VAN JE!"
