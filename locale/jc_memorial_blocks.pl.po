@@ -6,43 +6,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "2025 Memorial Block"
-msgstr "Blok pamiątkowy 2025"
+msgstr "Kamień Pamiątkowy 2025"
 
 msgid "2026 Memorial Block"
-msgstr "Blok pamiątkowy 2026"
+msgstr "Kamień Pamiątkowy 2026"
 
 msgid "Enable or disable memorial block sounds."
-msgstr "Włącz lub wyłącz dźwięki bloków pamiątkowych."
+msgstr "Możesz włączyć lub wyłączyć dźwięk dla kamieni pamiątkowych."
 
 msgid "Player not found."
 msgstr "Nie znaleziono gracza."
 
 msgid "Memorial block sounds disabled."
-msgstr "Dźwięki bloków pamiątkowych zostały wyłączone."
+msgstr "Dźwięk dla Kamieni Pamiątkowych jest wyłączony."
 
 msgid "Memorial block sounds enabled."
-msgstr "Dźwięki bloków pamiątkowych zostały włączone."
+msgstr "Dźwięku dla kamieni pamiątkowych jest włączona."
 
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Użycie: /memorial_sounds <on|off>"
 
 msgid "Show the memorial notices again on next login."
-msgstr "Pokaż ponownie informacje pamiątkowe przy następnym logowaniu."
+msgstr "Pokaż ponownie ogłoszenia na kamieniu pamiątkowym przy następnym logowaniu."
 
 msgid "Memorial notices reset."
-msgstr "Informacje pamiątkowe zostały zresetowane."
+msgstr "Zaktualizowano informacje na kamieniach pamiątkowych."
 
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
-msgstr "Dźwięki bloków pamiątkowych można wyłączyć za pomocą /memorial_sounds off."
+msgstr "Dźwięki związane z kamieniami pamiątkowymi można wyłączyć za pomocą polecenia /memorial_sounds off."
 
 msgid "This setting is saved after you leave the game."
-msgstr "To ustawienie zostanie zapisane po opuszczeniu gry."
+msgstr "To ustawienie zostanie zapisane po zamknięciu gry."
 
 msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
-msgstr "Postaw to w różnych miejscach, aby pokazać, że kochasz oryginalne Just Test. PAMIĘTAJ O TEŚCIE."
+msgstr "Pokaż to w całym mieście, żeby pokazać, że kochasz oryginalny Just Test. PAMIĘTAJ O TESCIE."
 
 msgid "This is a dedication block to your ideas, your server, and you."
-msgstr "Ten blok jest hołdem dla Twoich pomysłów, Twojego serwera i Ciebie."
+msgstr "To jest sekcja poświęcona Twoim pomysłom, Twojemu serwerowi i Tobie."
 
 msgid "WE MISS AND LOVE YOU!"
 msgstr "TĘSKNIMY ZA TOBĄ I KOCHAMY CIĘ!"
