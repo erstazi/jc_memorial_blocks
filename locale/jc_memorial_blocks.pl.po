@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+"Language: pl\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "2025 Memorial Block"
+msgstr "Blok pamiątkowy 2025"
+
+msgid "2026 Memorial Block"
+msgstr "Blok pamiątkowy 2026"
+
+msgid "Enable or disable memorial block sounds."
+msgstr "Włącz lub wyłącz dźwięki bloków pamiątkowych."
+
+msgid "Player not found."
+msgstr "Nie znaleziono gracza."
+
+msgid "Memorial block sounds disabled."
+msgstr "Dźwięki bloków pamiątkowych zostały wyłączone."
+
+msgid "Memorial block sounds enabled."
+msgstr "Dźwięki bloków pamiątkowych zostały włączone."
+
+msgid "Usage: /memorial_sounds <on|off>"
+msgstr "Użycie: /memorial_sounds <on|off>"
+
+msgid "Show the memorial notices again on next login."
+msgstr "Pokaż ponownie informacje pamiątkowe przy następnym logowaniu."
+
+msgid "Memorial notices reset."
+msgstr "Informacje pamiątkowe zostały zresetowane."
+
+msgid "Memorial block sounds can be disabled with /memorial_sounds off."
+msgstr "Dźwięki bloków pamiątkowych można wyłączyć za pomocą /memorial_sounds off."
+
+msgid "This setting is saved after you leave the game."
+msgstr "To ustawienie zostanie zapisane po opuszczeniu gry."
+
+msgid "Show this around town to show you love the original Just Test. REMEMBER THE TEST."
+msgstr "Postaw to w różnych miejscach, aby pokazać, że kochasz oryginalne Just Test. PAMIĘTAJ O TEŚCIE."
+
+msgid "This is a dedication block to your ideas, your server, and you."
+msgstr "Ten blok jest hołdem dla Twoich pomysłów, Twojego serwera i Ciebie."
+
+msgid "WE MISS AND LOVE YOU!"
+msgstr "TĘSKNIMY ZA TOBĄ I KOCHAMY CIĘ!"
