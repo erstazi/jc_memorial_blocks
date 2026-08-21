@@ -42,7 +42,7 @@ msgid "Show this around town to show you love the original Just Test. REMEMBER T
 msgstr "Pokaż to w całym mieście, żeby pokazać, że kochasz oryginalny Just Test. PAMIĘTAJ O TESCIE."
 
 msgid "This is a dedication block to your ideas, your server, and you."
-msgstr "To jest sekcja poświęcona Twoim pomysłom, Twojemu serwerowi i Tobie."
+msgstr "To kamień poświęcony Twoim pomysłom, Twojemu serwerowi i Tobie."
 
 msgid "WE MISS AND LOVE YOU!"
 msgstr "TĘSKNIMY ZA TOBĄ I KOCHAMY CIĘ!"
