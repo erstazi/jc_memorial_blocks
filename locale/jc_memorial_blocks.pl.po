@@ -12,16 +12,16 @@ msgid "2026 Memorial Block"
 msgstr "Kamień Pamiątkowy 2026"
 
 msgid "Enable or disable memorial block sounds."
-msgstr "Możesz włączyć lub wyłączyć dźwięk dla kamieni pamiątkowych."
+msgstr "Włącz/wyłącz dźwięki kamieni pamiątkowych."
 
 msgid "Player not found."
 msgstr "Nie znaleziono gracza."
 
 msgid "Memorial block sounds disabled."
-msgstr "Dźwięk dla Kamieni Pamiątkowych jest wyłączony."
+msgstr "Dźwięki kamieni pamiątkowych wyłączone."
 
 msgid "Memorial block sounds enabled."
-msgstr "Dźwięku dla kamieni pamiątkowych jest włączona."
+msgstr "Dźwięki kamieni pamiątkowych włączone."
 
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Użycie: /memorial_sounds <on|off>"
@@ -33,7 +33,7 @@ msgid "Memorial notices reset."
 msgstr "Zaktualizowano informacje na kamieniach pamiątkowych."
 
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
-msgstr "Dźwięki związane z kamieniami pamiątkowymi można wyłączyć za pomocą polecenia /memorial_sounds off."
+msgstr "Dźwięki kamieni pamiątkowych można wyłączyć za pomocą polecenia /memorial_sounds off."
 
 msgid "This setting is saved after you leave the game."
 msgstr "To ustawienie zostanie zapisane po zamknięciu gry."
@@ -45,4 +45,4 @@ msgid "This is a dedication block to your ideas, your server, and you."
 msgstr "To kamień poświęcony Twoim pomysłom, Twojemu serwerowi i Tobie."
 
 msgid "WE MISS AND LOVE YOU!"
-msgstr "TĘSKNIMY ZA TOBĄ I KOCHAMY CIĘ!"
+msgstr "KOCHAMY CIĘ I TĘSKNIMY ZA TOBĄ!"
