@@ -26,12 +26,6 @@ msgstr "Los sonidos de los bloques conmemorativos están activados."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Uso: /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Mostrar los avisos conmemorativos de nuevo en el próximo inicio de sesión."
-
-msgid "Memorial notices reset."
-msgstr "Avisos conmemorativos restablecidos."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "Los sonidos de los bloques conmemorativos se pueden desactivar con /memorial_sounds off."
 

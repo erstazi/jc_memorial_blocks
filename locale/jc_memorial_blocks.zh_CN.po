@@ -26,12 +26,6 @@ msgstr "纪念方块声音已启用。"
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "用法：/memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "下次登录时再次显示纪念通知。"
-
-msgid "Memorial notices reset."
-msgstr "纪念通知已重置。"
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "可以使用 /memorial_sounds off 禁用纪念方块声音。"
 

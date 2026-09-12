@@ -26,12 +26,6 @@ msgstr "Memorial block sounds enabled."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Usage: /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Show the memorial notices again on next login."
-
-msgid "Memorial notices reset."
-msgstr "Memorial notices reset."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "Memorial block sounds can be disabled with /memorial_sounds off."
 

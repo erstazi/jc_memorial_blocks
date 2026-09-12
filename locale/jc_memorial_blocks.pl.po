@@ -26,12 +26,6 @@ msgstr "Dźwięki kamieni pamiątkowych włączone."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Użycie: /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Pokaż ponownie ogłoszenia na kamieniu pamiątkowym przy następnym logowaniu."
-
-msgid "Memorial notices reset."
-msgstr "Zaktualizowano informacje na kamieniach pamiątkowych."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "Dźwięki kamieni pamiątkowych można wyłączyć za pomocą polecenia /memorial_sounds off."
 

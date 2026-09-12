@@ -26,12 +26,6 @@ msgstr "Gedenkblokgeluiden ingeschakeld."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Gebruik: /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Toon de gedenkberichten opnieuw bij de volgende aanmelding."
-
-msgid "Memorial notices reset."
-msgstr "Gedenkberichten gereset."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "De geluiden van de gedenkblokken kunnen worden uitgeschakeld met /memorial_sounds off."
 

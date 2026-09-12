@@ -26,12 +26,6 @@ msgstr "Звуки пам'ятних блоків увімкнено."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Використання: /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Знову показати пам'ятні повідомлення під час наступного входу."
-
-msgid "Memorial notices reset."
-msgstr "Пам'ятні повідомлення скинуто."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "Звуки пам'ятних блоків можна вимкнути за допомогою /memorial_sounds off."
 

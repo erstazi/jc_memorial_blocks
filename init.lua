@@ -263,29 +263,6 @@ core.register_globalstep(function(dtime)
   end
 end)
 
--- core.register_on_joinplayer(function(player)
-  -- local name = player:get_player_name()
-
-  -- core.after(3, function()
-    -- if not core.get_player_by_name(name) then
-      -- return
-    -- end
-
-    -- local meta = player:get_meta()
-
-    -- if meta:get_string("memorial_sounds_notice_20260725") == "" then
-
-      -- core.chat_send_player(name, core.colorize("#00FF88", "========================================================================================"))
-      -- core.chat_send_player(name, core.colorize("#FFFF00", " " .. S("Memorial block sounds can be disabled with /memorial_sounds off.")))
-      -- core.chat_send_player(name, core.colorize("#FFB188", " " .. S("This setting is saved after you leave the game.")))
-      -- core.chat_send_player(name, core.colorize("#00FF88", "========================================================================================"))
-
-      -- meta:set_string("memorial_sounds_notice_20260725", "done")
-    -- end
-
-  -- end)
--- end)
-
 core.register_on_leaveplayer(function(player)
   local name = player:get_player_name()
 
@@ -334,19 +311,5 @@ core.register_chatcommand("memorial_sounds", {
     end
 
     return false, S("Usage: /memorial_sounds <on|off>")
-  end,
-})
-
-core.register_chatcommand("reset_memorial_notice", {
-  description = S("Show the memorial notices again on next login."),
-  privs = {server = true},
-  func = function(name)
-    local player = core.get_player_by_name(name)
-    if not player then
-      return false, S("Player not found.")
-    end
-
-    player:get_meta():set_string("memorial_sounds_notice_20260725", "")
-    return true, S("Memorial notices reset.")
   end,
 })

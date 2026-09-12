@@ -26,12 +26,6 @@ msgstr "Les sons des blocs commémoratifs sont activés."
 msgid "Usage: /memorial_sounds <on|off>"
 msgstr "Utilisation : /memorial_sounds <on|off>"
 
-msgid "Show the memorial notices again on next login."
-msgstr "Afficher à nouveau les avis commémoratifs lors de la prochaine connexion."
-
-msgid "Memorial notices reset."
-msgstr "Avis commémoratifs réinitialisés."
-
 msgid "Memorial block sounds can be disabled with /memorial_sounds off."
 msgstr "Les sons des blocs commémoratifs peuvent être désactivés avec /memorial_sounds off."
 
